@@ -1,0 +1,9 @@
+NAME: Maganti Amrutha Hasini
+ROLL NUMBER: 26001598
+BRANCH: B.tech AIML
+SECTION: AIML-1
+Title
+PROGRAM-1: About our college
+PROGRAM-2: Bakery and cake
+PROGRAM-3: Digital Library
+
