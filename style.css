@@ -1,0 +1,379 @@
+```css
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: midnightblue;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: midnightblue;
+    padding: 18px 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: gold;
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: turquoise;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        to right,
+        midnightblue,
+        indigo,
+        teal
+    );
+
+    color: white;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.tagline {
+    color: gold;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: gold;
+    color: midnightblue;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: turquoise;
+}
+
+/* Common Sections */
+section:not(.hero) {
+    padding: 45px 7%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: indigo;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Search Section */
+.search-section {
+    background-color: white;
+    text-align: center;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.search-section input,
+.search-section select {
+    padding: 13px;
+    border: 2px solid lightsteelblue;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search-section input {
+    width: 340px;
+    max-width: 100%;
+}
+
+.search-section button {
+    background-color: indigo;
+    color: white;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: teal;
+}
+
+.search-note {
+    margin-top: 12px;
+    color: dimgray;
+    font-size: 13px;
+}
+
+/* Book Categories - CSS Grid */
+#categories {
+    background-color: lavender;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background-color: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 14px;
+    border-bottom: 5px solid turquoise;
+    box-shadow: 0 5px 12px lightgrey;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-card span {
+    font-size: 35px;
+}
+
+.category-card h3 {
+    color: indigo;
+    margin: 10px 0;
+}
+
+/* Featured Books */
+.featured {
+    background-color: white;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.book-card {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px lightgrey;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+.book-card img {
+    width: 125px;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    color: indigo;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.category-label {
+    color: teal;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+/* Availability Labels */
+.available,
+.unavailable {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.available {
+    background-color: palegreen;
+    color: darkgreen;
+}
+
+.unavailable {
+    background-color: lightpink;
+    color: darkred;
+}
+
+/* Catalog Table */
+#catalog {
+    background-color: lavender;
+}
+
+.table-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px lightgrey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background-color: indigo;
+    color: white;
+    padding: 16px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+tbody tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+tbody tr:hover {
+    background-color: lightcyan;
+}
+
+/* Library Rules */
+.rules-section {
+    background-color: lightcyan;
+}
+
+.rules-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px 35px;
+    background-color: white;
+    border-left: 6px solid teal;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px lightgrey;
+}
+
+.rules-box ol {
+    padding-left: 25px;
+}
+
+.rules-box li {
+    margin: 12px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: lavender;
+    text-align: center;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p:first-child {
+    color: gold;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .category-grid,
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .search-section input {
+        width: 100%;
+    }
+
+    .rules-box {
+        padding: 20px;
+    }
+}
+```
